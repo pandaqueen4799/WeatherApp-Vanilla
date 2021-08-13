@@ -16,34 +16,50 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1>New York</h1>
+        <div class="weather-app-wrapper">
+          <div class="overview">
+            <h1>New York</h1>
 
-        <ul>
-          <li>Wensday 8:37</li>
-          <li>raining</li>
-        </ul>
-
-        <div class="row">
-          <div class="col-6">
-            <div class="weather-app-wrapper">
-            <img
-            src=""
-              alt="Sunny"
-              width="105px"
-            />
-            86°F / C
-          <div class="col-6">
             <ul>
-              <li>Precipition: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Friday 5:00</li>
+              <li>Sunny</li>
             </ul>
           </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Sunny"
+                  class="float-left"
+                />
+
+                <div class="float-left">
+                  <strong> 86 </strong><span class="units">°F /
+                    <a href="#"> C </a> </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul>
+                <li>Precipition: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2 km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
-       <small>
-          <a href="https://github.com/pandaqueen4799/Vanilla-WeatherApp">
-       open-source </a>, by Tessa D. Acevedo </small>
-       </div>
+        <small>
+          <a
+            href="https://github.com/pandaqueen4799/Vanilla-WeatherApp"
+            target="_blank"
+          >
+            open-source </a
+          >, by Tessa D. Acevedo
+        </small>
+      </div>
     </div>
     <script src="java.js"></script>
   </body>
