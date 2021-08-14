@@ -19,11 +19,29 @@
     <div class="container">
       <div class="weather-app">
         <div class="weather-app-wrapper">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+            <input
+              type="search"
+              placeholder="Type a city..."
+              class="form-control"
+              id="city-input"
+              autocomplete="off"
+            />
+           </div>
+           <div class="col-3">
+            <input type="submit" value="Search"
+             class="btn btn-primary w-100"
+            />
+            </div>
+            </div>
+          </form>
           <div class="overview">
             <h1 id="city"></h1>
 
             <ul>
-              <li>Last updated: <span id = "date"></span></li>
+              <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -31,16 +49,11 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <img
-                  src=""
-                  alt="Sunny"
-                  id="icon"
-                  class="float-left"
-                />
+                <img src="" alt="Sunny" id="icon" class="float-left" />
 
                 <div class="float-left">
-                  <strong id="temprature"></strong><span class="units">°C /
-                    <a href="#"> F </a> </span>
+                  <strong id="temprature"></strong
+                  ><span class="units">°C / <a href="#"> F </a> </span>
                 </div>
               </div>
             </div>
@@ -48,7 +61,7 @@
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity">%</span></li>
-                <li>Wind: <span id="wind"> km/h</span> </li>
+                <li>Wind: <span id="wind"> km/h</span></li>
               </ul>
             </div>
           </div>
@@ -58,9 +71,9 @@
           <a
             href="https://github.com/pandaqueen4799/Vanilla-WeatherApp"
             target="_blank"
-          >Open-source </a
-          >
-           by Tessa D. Acevedo
+            >Open-source
+          </a>
+          by Tessa D. Acevedo
         </small>
       </div>
     </div>
