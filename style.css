@@ -23,7 +23,11 @@ li {
   line-height: 19px;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
+  
+}
+
+li::first-letter {
+text-transform: capitalize;
 }
 
 .weather-app-wrapper {
@@ -56,4 +60,8 @@ li {
 }
 .overview {
   margin-bottom: 20px;
+}
+
+.float-left {
+    float: left;
 }
