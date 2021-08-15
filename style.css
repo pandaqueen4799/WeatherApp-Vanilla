@@ -23,11 +23,10 @@ li {
   line-height: 19px;
   margin: 0;
   padding: 0;
-  
 }
 
 li::first-letter {
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
@@ -63,5 +62,13 @@ text-transform: capitalize;
 }
 
 .float-left {
-    float: left;
+  float: left;
+}
+.weather-temperature .active {
+  color: #212121;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
